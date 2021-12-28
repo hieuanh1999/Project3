@@ -4,17 +4,11 @@
   </a>
 </p>
 
-# CVS Landing Page
-
-CVS landing page site created using Gatsby
-
 ## Getting started
 
 ### Get the source code and install dependencies
 
 ```
-> git clone git@gitlab.com:thinh.daotrong178/cvs-landing-page.git
-> cd cvs-landing-page
 > npm install
 or
 > yarn install
