@@ -24,7 +24,8 @@ export default function Result({ result, type }) {
         'bvcare-claim': <BVCare data={data2[currentPage].info} type={data2[currentPage].type} />,
         'giay-ra-vien': <GiayRaVien data={data2[currentPage]?.info} />,
         'bao-gia-xe': <BaoGiaXe data={data2[currentPage]?.info} />,
-        'hoa-don-full': <HoaDonFull data={data2[currentPage]?.info} />
+        'hoa-don-full': <HoaDonFull data={data2[currentPage]?.info} />,
+        'face-reg': < NhanDien data={data2} />
     }
 
     return (
@@ -60,6 +61,19 @@ export default function Result({ result, type }) {
                 <div className='error'>
                     Không tìm thấy nội dung. Vui lòng thử lại!
                 </div>}
+        </>
+    )
+}
+
+function NhanDien({ data }) {
+
+    const name = data
+
+    console.log('data: ', data)
+
+    return (
+        <>
+            <Field name='Họ tên' value={name} />
         </>
     )
 }

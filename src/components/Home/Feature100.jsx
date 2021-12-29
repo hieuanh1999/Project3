@@ -25,19 +25,6 @@ export default function Feature100(props) {
     <div >
       <Row gutter={[30, 16]}>
         <Col md={6} xs={24}>
-          <Link to="/ocr" onClick={() => trackEvent("/")}>
-            <div className="feature100-content">
-              <div>
-                <img src="Frame6.png" alt="image" style={{maxWidth: "100%"}} />
-              </div>
-              <div>
-                <Styled>Nhận Diện Ký Tự</Styled>
-                <Title>Giấy tờ tùy thân, Giấy tờ xe, Hóa đơn, Dữ liệu bảng, ...</Title>
-              </div>
-            </div>
-          </Link>
-        </Col>
-        <Col md={6} xs={24}>
           <Link to="/facial-recognition" onClick={() => trackEvent("/")}>
             <div className="feature100-content">
               <div>
@@ -45,33 +32,7 @@ export default function Feature100(props) {
               </div>
               <div>
                 <Styled>Nhận Diện Khuôn Mặt</Styled>
-                <Title>Giấy tờ tùy thân, Giấy tờ xe, Hóa đơn, Dữ liệu bảng, ...</Title>
-              </div>
-            </div>
-          </Link>
-        </Col>
-        <Col md={6} xs={24}>
-          <Link to="/ekyc" onClick={() => trackEvent("/")}>
-            <div className="feature100-content">
-              <div>
-                <img src="Frame9.png" alt="image" style={{maxWidth: "100%"}} />
-              </div>
-              <div>
-                <Styled>eKYC</Styled>
-                <Title>Định danh khách hàng trực tuyến</Title>
-              </div>
-            </div>
-          </Link>
-        </Col>
-        <Col md={6} xs={24}>
-          <Link to="/image-recognition" onClick={() => trackEvent("/")}>
-            <div className="feature100-content">
-              <div>
-                <img src="Frame8.png" alt="image" style={{maxWidth: "100%"}} />
-              </div>
-              <div>
-                <Styled>Xử Lý Hình Ảnh</Styled>
-                <Title>Smart Crop, Tagging</Title>
+                <Title>Nhận diện khuôn mặt người nổi tiếng</Title>
               </div>
             </div>
           </Link>

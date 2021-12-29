@@ -62,12 +62,8 @@ export default function ContactForm(props) {
     return (
         <>
             <div {...tagProps} {...dataSource.wrapper}>
-                {/* <div {...dataSource.image}>
-                <img src={dataSource.image.children} width="100%" alt="img" />
-            </div> */}
                 <div {...dataSource.page}>
                     <div {...dataSource.childWrapper}>
-                        {dataSource.childWrapper.children.map(getChildrenToRender)}
                         <Form
                             layout="vertical"
                             form={form}
@@ -128,45 +124,6 @@ export default function ContactForm(props) {
                                     ]}
                                 >
                                     <Input placeholder={intl.formatMessage({ id: "contact.phone" })} />
-                                </Form.Item>
-                                </Col>
-
-                                <Col md={24} xs={24}>  <Form.Item
-                                    name="category"
-                                    rules={[
-                                        {
-                                            required: true,
-                                            message: intl.formatMessage({
-                                                id: "contact.care_about.message",
-                                            }),
-                                        },
-                                    ]}
-                                >
-                                    <Select
-                                        placeholder={intl.formatMessage({ id: "contact.care_about.label" })}
-                                    >
-                                        <Option value="Tôi muốn trao đổi về các sản phẩm của Computer Vision Vietnam">
-                                            <FormattedMessage id="contact.care_about.option0" />
-                                        </Option>
-                                        <Option value="Tôi muốn một bản demo sản phẩm">
-                                            <FormattedMessage id="contact.care_about.option1" />
-                                        </Option>
-                                        <Option value="Tôi muốn tạo tài khoản dùng thử CVS Vision API">
-                                            <FormattedMessage id="contact.care_about.option6" />
-                                        </Option>
-                                        <Option value="Tôi là khách hàng và cần hỗ trợ">
-                                            <FormattedMessage id="contact.care_about.option2" />
-                                        </Option>
-                                        <Option value="Tôi muốn làm việc tại Computer Vision Vietnam">
-                                            <FormattedMessage id="contact.care_about.option3" />
-                                        </Option>
-                                        <Option value="Tôi muốn là đối tác của Computer Vision Vietnam">
-                                            <FormattedMessage id="contact.care_about.option4" />
-                                        </Option>
-                                        <Option value="Lý do khác">
-                                            <FormattedMessage id="contact.care_about.option5" />
-                                        </Option>
-                                    </Select>
                                 </Form.Item>
                                 </Col>
                                 <Col md={24} xs={24}>

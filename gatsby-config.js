@@ -3,8 +3,8 @@ const siteUrl =
 
 module.exports = {
   siteMetadata: {
-    title: `Computer Vision Vietnam`,
-    name: `Computer Vision Vietnam`,
+    title: `Trường Đại học Bách khoa Hà Nội`,
+    name: `Trường Đại học Bách khoa Hà Nội`,
     siteUrl: `https://computervision.com.vn/`,
     description: `Computer Vision Vietnam - Công nghệ Computer Vision cho các doanh nghiệp`,
     social: [
@@ -20,15 +20,6 @@ module.exports = {
     defaultImage: `/site-image.png`
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-plugin-google-gtag`,
-    //   options: {
-    //     trackingIds: ["G-KN187T7J22"],
-    //     pluginConfig: {
-    //       head: true
-    //     }
-    //   }
-    // },
     {
       resolve: "gatsby-plugin-antd",
       options: {
@@ -38,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Computer Vision Vietnam`,
+        name: `Trường Đại học Bách khoa Hà Nội`,
         short_name: `CVS`,
         start_url: `/`,
         icon: "static/favicon.png"

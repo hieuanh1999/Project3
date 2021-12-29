@@ -63,7 +63,7 @@ class Sidebar2 extends React.Component {
             <div className="logo">
               <Link to="/" onClick={() => trackEvent("/")}>
                 <img
-                  src="/Web_logo.svg"
+                  src="/logoEn.png"
                   alt="img"
                   width="100%"
                   height="85px"
@@ -89,16 +89,6 @@ class Sidebar2 extends React.Component {
               </Link>
             </Menu.Item>
             <Menu.Item
-              key="2"
-              icon={<img src="/Vector2.svg" alt="img" />}
-              className="sidebar"
-              style={{ height: 56 }}
-            >
-              <Link to="/ocr" onClick={() => trackEvent("/")}>
-                Nhận diện ký tự
-              </Link>
-            </Menu.Item>
-            <Menu.Item
               key="3"
               icon={<img src="/Vector3.svg" alt="img" />}
               className="sidebar"
@@ -106,26 +96,6 @@ class Sidebar2 extends React.Component {
             >
               <Link to="/facial-recognition" onClick={() => trackEvent("/")}>
                 Nhận diện khuôn mặt
-              </Link>
-            </Menu.Item>
-            <Menu.Item
-              key="4"
-              icon={<img src="/Vector4.svg" alt="img" />}
-              className="sidebar"
-              style={{ height: 56 }}
-            >
-              <Link to="/ekyc" onClick={() => trackEvent("/")}>
-                eKYC
-              </Link>
-            </Menu.Item>
-            <Menu.Item
-              key="5"
-              icon={<img src="/Vector5.svg" alt="img" />}
-              className="sidebar"
-              style={{ height: 56 }}
-            >
-              <Link to="/image-recognition" onClick={() => trackEvent("/")}>
-                Xử lý hình ảnh
               </Link>
             </Menu.Item>
           </Menu>

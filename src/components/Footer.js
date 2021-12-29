@@ -5,7 +5,7 @@ export class Footer extends Component {
     return (
       <Footer1>
         <Copyright>
-          Copyright ©2020 by Computer Vision Vietnam. All Rights Reserved
+          Bản quyền thuộc về Trường Đại học Bách khoa Hà Nội
         </Copyright>
       </Footer1>
     );

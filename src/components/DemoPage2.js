@@ -1,14 +1,10 @@
 import { Button, Space, Divider } from "antd";
 import React, { useEffect, useState } from "react";
 import { Link } from "gatsby-plugin-intl";
-import DemoFaceMatching from "./FaceMatching/DemoFaceMatching";
-import DemoFaceSearch from "./FaceSearch/DemoFaceSearch";
-import DemoSmartCrop from "./SmartCrop/DemoSmartCrop";
+import DemoVanBan from "./VanBan/DemoVanBan";
 
 const types = [
-  { id: 1, name: "So khớp khuôn mặt", key: "face-matching" },
-  { id: 2, name: "Tìm kiếm khuôn mặt", key: "face-search" },
-  { id: 3, name: "Tạo ảnh đại diện", key: "tao-anh-dai-dien" }
+  { id: 1, name: "Nhân diện khuôn mặt ", key: "face-reg" },
 ];
 
 function useQuery() {
@@ -16,7 +12,7 @@ function useQuery() {
 }
 
 export default function DemoPage2() {
-  const [currentType, setCurrentType] = useState("face-matching");
+  const [currentType, setCurrentType] = useState("face-reg");
   const [result, setResult] = useState(null);
 
   let query = useQuery();
@@ -29,10 +25,12 @@ export default function DemoPage2() {
   }, []);
 
   const demoOptions = {
-    "face-matching": <DemoFaceMatching result={result} setResult={setResult} />,
-    "face-search": <DemoFaceSearch result={result} setResult={setResult} />,
-    "tao-anh-dai-dien": (
-      <DemoSmartCrop cropPerson={true} result={result} setResult={setResult} />
+    "face-reg": (      
+      <DemoVanBan
+        currentType={currentType}
+        result={result}
+        setResult={setResult}
+      />
     )
   };
 
@@ -94,7 +92,7 @@ export default function DemoPage2() {
           }}
           orientation="left"
         >
-          Vui lòng chọn ảnh demo bên dưới hoặc tải ảnh từ máy của bạn lên
+          Vui lòng tải ảnh từ máy của bạn lên
         </Divider>
         <div className="upload-wrapper">{demoOptions[currentType]}</div>
       </div>

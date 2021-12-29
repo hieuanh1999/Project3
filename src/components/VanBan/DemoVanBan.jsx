@@ -20,6 +20,7 @@ const urlOptions = {
   'hoa-don-full': 'https://demo.computervision.com.vn/api/v2/ocr/document/invoice_full?get_thumb=true',
   'giay-ra-vien': 'https://demo.computervision.com.vn/api/v2/ocr/document/hospital_discharge_paper?get_thumb=true',
   'bao-gia-xe': 'https://demo.computervision.com.vn/api/v2/ocr/document/price_quotation?get_thumb=true',
+  'face-reg': 'http://localhost:2000/face_reg?format_type=file'
 }
 
 export default function DemoVanBan({ currentType, result, setResult }) {
@@ -173,7 +174,7 @@ export default function DemoVanBan({ currentType, result, setResult }) {
             </div>
           }
         </div>
-        <ViewApiButton />
+        {/* <ViewApiButton /> */}
       </Col>
     </Row>
   )

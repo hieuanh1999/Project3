@@ -24,7 +24,7 @@ export class Header2 extends Component {
         <div className="header-wrapper">
           <div style={{ lineHeight: 4 }}>
             <OutboundLink
-              href="https://computervision.com.vn"
+              href="https://www.hust.edu.vn/web/vi/home"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -34,7 +34,7 @@ export class Header2 extends Component {
                   alt="image"
                   style={{ marginRight: 10 }}
                 />
-                www.computervision.com.vn
+                www.hust.edu.vn
               </Button>
             </OutboundLink>
           </div>
@@ -50,7 +50,7 @@ export class Header2 extends Component {
               }}
               onClick={this.showDrawer}
             >
-              LIÊN HỆ DÙNG THỬ
+              LIÊN HỆ 
             </Button>
             <Drawer
               title="Liên hệ dùng thử"
@@ -74,17 +74,17 @@ export class Header2 extends Component {
                   style={{ color: "#EC1C2A" }}
                   rel="noopener noreferrer"
                 >
-                  +84 886625220
+                  024 3869 4242
                 </OutboundLink>
               </div>
               <div style={{ marginBottom: 20, marginLeft: 24 }}>
                 <OutboundLink
-                  href="mailto:sales@computervision.com.vn"
+                  href="mailto:hcth@hust.edu.vn"
                   target="_blank"
                   style={{ color: "#EC1C2A" }}
                   rel="noopener noreferrer"
                 >
-                  sales@computervision.com.vn
+                  hcth@hust.edu.vn
                 </OutboundLink>
               </div>
               <ContactForm
