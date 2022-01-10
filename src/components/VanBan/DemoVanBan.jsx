@@ -5,7 +5,6 @@ import axios from 'axios';
 import { AuthKey } from '../AuthKey';
 import { isURL, trackTrialEvent } from '../utils';
 import Result from './Result';
-import ViewApiButton from '../ViewApiButton';
 import PreviewPDF from '../DuLieuDangBang/PreviewPDF';
 
 const urlOptions = {
@@ -146,7 +145,6 @@ export default function DemoVanBan({ currentType, result, setResult }) {
                   <Button icon={<DeleteFilled />} style={{ position: 'absolute', top: 0, right: 0 }} type='primary' onClick={onDelete} />
                 </>
               }
-
             </div>
             : <div className='upload-area' >
               <PlusOutlined />

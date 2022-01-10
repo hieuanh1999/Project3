@@ -14,17 +14,6 @@ export default function Result({ result, type }) {
     const [currentPage, setCurrentPage] = useState(0)
 
     const resultOptions = {
-        'van-ban-tong-quat': <VanBanScan data={data || data2[currentPage]} />,
-        'hoa-don-xe': <HoaDonXe data={data2[currentPage].info} />,
-        'pvi-hoa-don': <HoaDonXe data={data2[currentPage].info} />,
-        'hoa-don-vat': <HoaDonVAT data={data2[currentPage].info} />,
-        'bang-ke': <BangKe data={data2[currentPage].info} />,
-        'phieu-kham-benh': <PhieuKhamBenh data={data2[currentPage].info} />,
-        'boi-thuong-bao-hiem': <BoiThuongBH data={data2[currentPage].info} />,
-        'bvcare-claim': <BVCare data={data2[currentPage].info} type={data2[currentPage].type} />,
-        'giay-ra-vien': <GiayRaVien data={data2[currentPage]?.info} />,
-        'bao-gia-xe': <BaoGiaXe data={data2[currentPage]?.info} />,
-        'hoa-don-full': <HoaDonFull data={data2[currentPage]?.info} />,
         'face-reg': < NhanDien data={data2} />
     }
 
